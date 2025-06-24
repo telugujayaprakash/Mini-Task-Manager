@@ -36,9 +36,8 @@ backend:-
 
 ## Screenshots
 
-
-![App Screenshot](./frontend/src/Assets/loginpage.png) LoginPage
-![App Screenshot](./frontend/src/Assets/Homepage.png) Home Page
-![App Screenshot](./frontend/src/Assets/pendingtaskpage.png) Pending Task Page
-![App Screenshot](./frontend/src/Assets/completedtaskpage.png) Completed Task Page
+![App Screenshot](./frontend/src/Assets/loginpage.png)
+![App Screenshot](./frontend/src/Assets/Homepage.png)
+![App Screenshot](./frontend/src/Assets/pendingtaskpage.png)
+![App Screenshot](./frontend/src/Assets/completedtaskpage.png)
 
