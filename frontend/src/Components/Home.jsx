@@ -5,17 +5,17 @@ import axios from 'axios'
 function Home() {
     const [tasks, settasks] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:8000/get')
+        axios.get('https://mini-task-manager-uxvi.onrender.com/get')
         .then(res=>settasks(res.data))
         .catch(err=>console.log(err))
     })
     const handlecheck=(id)=>{
-        axios.put(`http://localhost:8000/update/${id}`)
+        axios.put(`https://mini-task-manager-uxvi.onrender.com/update/${id}`)
         .then(res=>console.log(res.data))
         .catch(err=>console.log(err))
     }
     const handledelete=(id)=>{
-        axios.delete(`http://localhost:8000/delete/${id}`)
+        axios.delete(`https://mini-task-manager-uxvi.onrender.com/delete/${id}`)
         .then(res=>console.log(res.data))
         .catch(err=>console.log(err))
     }

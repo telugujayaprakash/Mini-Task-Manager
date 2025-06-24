@@ -4,7 +4,7 @@ import axios from 'axios'
 function Create() {
     const [tasks, settasks] = useState('')
     const addTask=(e)=> {
-        axios.post('http://localhost:8000/add', {task:tasks})
+        axios.post('https://mini-task-manager-uxvi.onrender.com/add', {task:tasks})
         .then(res=>console.log(res.data))
         .catch(err=>console.log(err))
         e.preventDefault();
