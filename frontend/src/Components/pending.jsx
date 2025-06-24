@@ -32,22 +32,12 @@ function Pending() {
       ) : (
         <div className="flex flex-col gap-4 w-full max-w-md">
           {pendingTasks.map(task => (
-            <div
-              key={task._id}
-              className="flex items-center justify-between bg-yellow-100 p-4 rounded shadow"
-            >
+            <div key={task._id} className="flex items-center justify-between bg-yellow-100 p-4 rounded shadow">
               <div className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  onClick={() => handleCheck(task._id)}
-                />
+                <input type="checkbox" onClick={() => handleCheck(task._id)}/>
                 <p className="text-gray-800">{task.task}</p>
               </div>
-              <button
-                type="button"
-                onClick={() => handleDelete(task._id)}
-                className="text-red-600 hover:underline"
-              >
+              <button type="button" onClick={() => handleDelete(task._id)} className="text-red-600 hover:underline">
                 Delete
               </button>
             </div>

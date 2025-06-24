@@ -25,31 +25,10 @@ function Login() {
         Login Page
       </div><br />
       <form onSubmit={handleLogin} className="flex flex-col items-center gap-4 mt-20">
-        <input
-          type="text"
-          placeholder="Enter Name"
-          className="border p-2"
-          value={Name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <input
-          type="email"
-          placeholder="Enter Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="border p-2"
-        />
-        <input
-          type="password"
-          placeholder="Enter Password"
-          value={pass}
-          onChange={(e) => setPass(e.target.value)}
-          className="border p-2"
-        />
-        <button
-          type="submit"
-          className="bg-blue-600 text-white px-4 py-2 rounded"
-        >
+        <input type="text" placeholder="Enter Name" className="border p-2" value={Name} onChange={(e) => setName(e.target.value)}/>
+        <input type="email" placeholder="Enter Email" value={email} onChange={(e) => setEmail(e.target.value)} className="border p-2"/>
+        <input type="password" placeholder="Enter Password" value={pass} onChange={(e) => setPass(e.target.value)} className="border p-2"/>
+        <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">
           Login
         </button>
       </form>

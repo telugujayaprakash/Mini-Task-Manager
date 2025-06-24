@@ -29,24 +29,14 @@ function Home() {
       ) : (
         <div className="flex flex-col gap-y-4 w-full max-w-md">
           {tasks.map((task) => (
-            <div
-              key={task._id}
-              className="flex items-center justify-between bg-blue-100 p-4 rounded shadow"
-            >
+            <div key={task._id} className="flex items-center justify-between bg-blue-100 p-4 rounded shadow" >
               <div className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  checked={task.completed}
-                  onChange={() => handleCheck(task._id)}
-                />
+                <input type="checkbox" checked={task.completed} onChange={() => handleCheck(task._id)} />
                 <p className={`text-lg ${task.completed ? 'line-through text-gray-500' : ''}`}>
                   {task.task}
                 </p>
               </div>
-              <button
-                className="text-red-500 hover:underline"
-                onClick={() => handleDelete(task._id)}
-              >
+              <button className="text-red-500 hover:underline" onClick={() => handleDelete(task._id)}>
                 Delete
               </button>
             </div>

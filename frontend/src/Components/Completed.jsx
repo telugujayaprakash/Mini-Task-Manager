@@ -26,19 +26,12 @@ function Completed() {
       ) : (
         <div className="flex flex-col gap-4 w-full max-w-md">
           {completedTasks.map(task => (
-            <div
-              key={task._id}
-              className="flex items-center justify-between bg-green-100 p-4 rounded shadow"
-            >
+            <div key={task._id} className="flex items-center justify-between bg-green-100 p-4 rounded shadow" >
               <div className="flex items-center gap-2">
                 <input type="checkbox" checked readOnly />
                 <p className="line-through text-gray-700">{task.task}</p>
               </div>
-              <button
-                type="button"
-                onClick={() => handleDelete(task._id)}
-                className="text-red-600 hover:underline"
-              >
+              <button type="button" onClick={() => handleDelete(task._id)} className="text-red-600 hover:underline">
                 Delete
               </button>
             </div>
